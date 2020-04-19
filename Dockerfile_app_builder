@@ -1,0 +1,7 @@
+FROM ubuntu:bionic
+
+RUN apt-get update -y \
+    && apt-get install netcat -y \
+    && apt-get upgrade -y \
+    && rm -rf /var/lib/apt/lists/*
+
